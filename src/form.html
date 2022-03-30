@@ -33,10 +33,59 @@
 
 
   <main class="page-main">
-
-
-
-
+    <section class="choose-program">
+      <h1 class="choose-program__title">Подбор программы</h1>
+      <stong class="chose-program__text">Заполните анкету, и мы подберем
+        программу питания для вашего кота</stong>
+      <form class="choose-program__form" action="" method="post">
+        <fieldset class="chose-program__main">
+          <legend class="visually-hidden">Основные данные о коте</legend>
+          <ul>
+            <li>
+              <label for="cat-name">Имя:*</label>
+              <input id="cat-name" type="text" name="name">
+            </li>
+            <li>
+              <label for="cat-weight">Вес (кг):*</label>
+              <input id="cat-weight" type="number" name="weight">
+            </li>
+            <li>
+              <label for="cat-age">Возраст (лет):</label>
+              <input id="cat-age" type="number" name="age">
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="chose-program__program">
+          <legend class="visually-hidden">Желаемая программа</legend>
+          <ul>
+            <li>
+              <label for="slim"></label>
+              <input type="radio">
+            </li>
+            <li>
+              <label for="pro"></label>
+              <input type="radio">
+            </li>
+            <li>
+              <label for="help"></label>
+              <input type="radio">
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="chose-program__owner-data">
+          <legend class="chose-program__legend">Контактные данные (владельца кота)</legend>
+          <input type="text">
+        </fieldset>
+        <fieldset class="chose-program__comment">
+          <legend class="chose-program__legend">Комментарий</legend>
+        </fieldset>
+        <fieldset class="chose-program__additiomal">
+          <legend class="chose-program__legend">Дополнительно</legend>
+        </fieldset>
+        <button class="chose-program__submit button" type="submit">Отправить заявку</button>
+        <small>* — Обязательные поля</small>
+      </form>
+    </section>
 
     <section class="map">
       <h2 class="visually-hidden">Где нас найти</h2>
