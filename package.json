@@ -1,11 +1,8 @@
 {
   "name": "cat-energy",
   "version": "1.0.0",
-  "description": "",
+  "description": "Учебный проект «Cat Energy» HTML Academy",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "author": "",
   "license": "ISC",
   "devDependencies": {
@@ -18,5 +15,13 @@
     "gulp-postcss": "^9.0.1",
     "gulp-sass": "^5.1.0",
     "gulp-sourcemaps": "^3.0.0"
-  }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "browserlist": [
+    "last 2 versions",
+    "IE 11",
+    "Firefox ESR"
+  ]
 }
