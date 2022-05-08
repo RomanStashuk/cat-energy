@@ -10,11 +10,13 @@
 <body class="page__body">
 
   <header class="page-header">
-    <a class="page-header__logo logo logo--header">
-      <img src="" alt="Логотип Сat Energy" width="" height="">
+    <a class="page-header__logo  logo  logo--header">
+      <img class="logo__img" src="img/logo/logo-img-mobile.svg" alt="Логотип Сat Energy" width="34" height="37">
+      <img class="logo__txt" src="img/logo/logo-text-mobile.svg" alt="Сat Energy" width="101" height="18">
     </a>
-    <nav class="main-nav">
+    <nav class="main-nav  main-nav--closed  main-nav--nojs">
       <button class="main-nav__toggle" type="button">
+        <div class="main-nav__toggle-icon"></div>
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <ul class="main-nav__list">
@@ -29,16 +31,19 @@
         </li>
       </ul>
     </nav>
+    <div class="green-bg"></div>
   </header>
 
 
   <main class="page-main">
 
     <section class="promo">
-      <h1 class="promo__title">Функциональное питание для котов</h1>
-      <span class="promo__slogan">Занялся собой? Займись котом!</span>
-      <a href="form.html" class="promo__link button">Подобрать программу</a>
-      <img class="promo__image" src="" alt="Корм Cat Energy с курицей" width="" height="">
+      <div class="promo__wrapper">
+        <h1 class="promo__title">Функциональное питание для котов</h1>
+        <span class="promo__slogan">Занялся собой? Займись котом!</span>
+        <a href="form.html" class="promo__link button">Подобрать программу</a>
+        <img class="promo__image" src="" alt="Корм Cat Energy с курицей" width="" height="">
+      </div>
     </section>
 
     <section class="options">
@@ -140,6 +145,8 @@
       <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">HTML Academy</a>
     </div>
   </foter>
+
+  <script src="js/main-nav.js"></script>
 
 </body>
 </html>
