@@ -1,0 +1,31 @@
+.button {
+  min-height: 40px;
+  padding: 11px 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: $main-color;
+
+  @media (min-width: $tablet-width) {
+    min-height: 54px;
+    padding: 15px 26px;
+    font-size: 20px;
+    line-height: 24px;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: $secondary-color;
+    }
+
+    &:active {
+      color: rgba(#fff, 0.3);
+    }
+  }
+}

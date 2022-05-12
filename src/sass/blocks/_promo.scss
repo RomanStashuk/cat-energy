@@ -1,0 +1,125 @@
+.promo {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Oswald', 'Arial', sans-serif;
+  font-weight: 400;
+  color: #fff;
+
+  @media (min-width: $tablet-width) {
+    align-items: flex-start;
+    color: #000;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 576px;
+  }
+
+  &::before {
+    content: '';
+    height: 305px;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    display: block;
+    background: url('../img/backgrounds/promo-mobile-bg.jpg') right center / auto 697px no-repeat #65a93c;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 50vw;
+      height: 696px;
+      top: -120px;
+      left: 50%;
+      display: block;
+      background-image: url('../img/backgrounds/promo-desktop-bg.jpg');
+    }
+  }
+}
+
+.promo__title {
+  margin-top: 27px;
+  margin-bottom: 0;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: inherit;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 50px;
+    margin-right: 87px;
+    margin-left: 87px;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 100px;
+    margin-left: 80px;
+  }
+}
+
+.promo__slogan {
+  margin-top: 25px;
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 40px;
+    margin-right: 87px;
+    margin-left: 87px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 80px;
+  }
+}
+
+.promo__link {
+  margin-top: 3px;
+  align-self: stretch;
+  order: 3;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 49px;
+    margin-left: 83px;
+    align-self: flex-start;
+    order: initial;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 52px;
+    margin-left: 80px;
+    position: static;
+  }
+}
+
+.promo__image {
+  margin: 0 auto;
+  margin-top: 29px;
+
+  @media (min-width: $tablet-width) {
+    width: 709px;
+    height: 609px;
+    margin-top: -83px;
+    margin-bottom: 0;
+    position: relative;
+    z-index: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 522px;
+    height: 499px;
+    margin-top: -365px;
+    margin-left: 450px;
+  }
+}
