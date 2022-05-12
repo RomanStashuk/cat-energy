@@ -1,3 +1,19 @@
+.logo--header {
+  min-height: 66px;
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    min-height: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    min-height: 59px;
+  }
+}
+
 .logo__img {
   width: 34px;
   height: 37px;
@@ -18,23 +34,3 @@
   align-self: center;
 }
 
-.logo--header {
-  min-height: 66px;
-  display: flex;
-  justify-content: center;
-
-  @media (min-width: $tablet-width) {
-    width: 174px;
-    min-height: 52px;
-    position: absolute;
-    top: 0;
-    left: 30px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 202px;
-    min-height: 59px;
-    top: 0;
-    left: 110px;
-  }
-}

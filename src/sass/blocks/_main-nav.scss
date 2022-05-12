@@ -1,15 +1,3 @@
-.green-bg {
-  @media (min-width: $desktop-width) {
-    width: 100%;
-    height: 400px;
-    position: absolute;
-    left: 50%;
-    top: -54px;
-    z-index: -1;
-    background-color: $main-color;
-  }
-}
-
 .main-nav__list {
   margin: 0;
   padding: 0;
@@ -31,8 +19,8 @@
 
   @media (min-width: $desktop-width) {
     margin-top: 54px;
-    margin-right: 93px;
-    margin-left: calc(50% + 110px);
+    margin-right: 43px;
+    margin-left: calc(50% + 100px);
     font: 400 20px/29px 'Oswald', 'Arial', sans-serif;
   }
 }

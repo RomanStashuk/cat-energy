@@ -4,3 +4,16 @@
   position: relative;
 }
 
+.page-header__logo {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 0;
+    left: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 0;
+    left: 50px;
+  }
+}
+
