@@ -1,11 +1,19 @@
 // Viewports
 
 $tablet-width: 768px;
-$desktop-width: 1440px;
+$desktop-width: 1320px;
 $mobile-width-only: 767px;
 
 
 // Colors
 
 $main-color: #68B738;
-$content-txt-color: #444;
+$secondary-color: #5EAA2F;
+$error-color: #FF8282;
+
+$gray--lighten: #F2F2F2;
+$gray--light: #EBEBEB;
+$gray: #CDCDCD;
+$gray--dark: #666;
+$gray--darken: #444;
+$grey-darkest: #222;
