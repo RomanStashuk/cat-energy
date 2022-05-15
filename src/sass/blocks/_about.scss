@@ -1,0 +1,133 @@
+.about {
+  padding-bottom: 42px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 11px;
+  }
+}
+.about__title {
+  margin-top: 27px;
+  margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 45px;
+    margin-bottom: -5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 72px;
+  }
+}
+
+.about__list {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-start;
+  }
+}
+
+.about__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    max-width: 40%;
+    min-height: 280px;
+    margin-top: 37px;
+    padding-top: 40px;
+    padding-right: 30px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 280px;
+    padding-right: 15px;
+
+    &:not(:nth-child(4n)) {
+      margin-right: 33px;
+    }
+  }
+
+  &:not(:first-child) {
+    @media (max-width: $mobile-width-only) {
+      margin-top: 20px;
+    }
+  }
+
+  &::before {
+    content: '';
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+    background: center center no-repeat $main-color;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  &--first {
+    &::before {
+      background-image: url('../img/icons/about--first.svg');
+    }
+  }
+  &--second {
+    &::before {
+      background-image: url('../img/icons/about--second.svg');
+    }
+  }
+  &--third {
+    &::before {
+      background-image: url('../img/icons/about--third.svg');
+    }
+  }
+  &--fourth {
+    &::before {
+      background-image: url('../img/icons/about--fourth.svg');
+    }
+  }
+}
+
+.about__number {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+
+  position: absolute;
+  top: 0;
+  right: 10%;
+  z-index: -1;
+  font: 400 280px/1 'Oswald', 'Arial', sans-serif;
+  color: $gray--lighten;
+
+  @media (min-width: $desktop-width) {
+    right: 35px;
+  }
+}
+
+.about__text {
+  margin: 0;
+  margin-left: 20px;
+  color: $gray--darken;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 31px;
+    margin-left: 0;
+  }
+}
