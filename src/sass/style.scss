@@ -15,17 +15,32 @@
 @import 'blocks/page';
 @import 'blocks/container';
 @import 'blocks/button.scss';
+@import 'blocks/section-title';
+
+
+// Header
 
 @import 'blocks/page-header';
 @import 'blocks/main-nav';
 @import 'blocks/logo';
 
+
+// Main
+
 @import 'blocks/page-main';
+
+
+// Sections
+
 @import 'blocks/promo';
-@import 'blocks/options'
+@import 'blocks/options';
+@import 'blocks/about';
+@import 'blocks/example';
+@import 'blocks/map';
 
 
+// Footer
 
-
-
-
+@import 'blocks/page-footer';
+@import 'blocks/social';
+@import 'blocks/copyright';
