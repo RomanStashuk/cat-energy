@@ -1,19 +1,43 @@
 .page-header {
-  max-width: $desktop-width;
-  margin: 0 auto;
-  position: relative;
-}
 
-.page-header__logo {
+  @media (max-width: $mobile-width-only) {
+    padding: 0;
+  }
+
   @media (min-width: $tablet-width) {
-    position: absolute;
-    top: 0;
-    left: 30px;
+    padding-top: 24px;
+    display: flex;
+    justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
-    top: 0;
-    left: 50px;
+    padding-top: 53px;
+    position: relative;
+
+    &::before {
+      content: '';
+      width: 50vw;
+      height: 696px;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      z-index: -1;
+      background: url('../img/backgrounds/promo-desktop-bg.jpg') right center / auto 696px no-repeat #65a93c;
+    }
   }
 }
 
+.page-header__nav {
+
+  @media (min-width: $tablet-width) {
+    margin-top: 6px;
+    margin-left: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 610px;
+    margin-top: 4px;
+    margin-left: 16px;
+  }
+}

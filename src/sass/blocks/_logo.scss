@@ -2,15 +2,17 @@
   min-height: 66px;
   display: flex;
   justify-content: center;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     width: 174px;
-    min-height: 52px;
+    height: 52px;
+    flex-shrink: 0;
   }
 
   @media (min-width: $desktop-width) {
     width: 202px;
-    min-height: 59px;
+    height: 59px;
   }
 }
 
@@ -23,7 +25,6 @@
 
   @media (min-width: $tablet-width) {
     position: static;
-    align-self: center;
   }
 }
 
@@ -31,6 +32,5 @@
   width: 101px;
   height: 18px;
   margin: 0 auto;
-  align-self: center;
 }
 
