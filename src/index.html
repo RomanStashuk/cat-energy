@@ -9,14 +9,13 @@
 </head>
 <body class="page__body">
 
-  <header class="page-header">
+  <header class="page-header  container">
     <a class="page-header__logo  logo  logo--header">
       <img class="logo__img" src="img/logo/logo-img-mobile.svg" alt="Логотип Сat Energy" width="34" height="37">
       <img class="logo__txt" src="img/logo/logo-text-mobile.svg" alt="Сat Energy" width="101" height="18">
     </a>
-    <nav class="main-nav  main-nav--closed  main-nav--nojs">
+    <nav class="page-header__nav  main-nav  main-nav--closed  main-nav--nojs">
       <button class="main-nav__toggle" type="button">
-        <div class="main-nav__toggle-icon"></div>
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <ul class="main-nav__list">
@@ -31,7 +30,6 @@
         </li>
       </ul>
     </nav>
-    <div class="green-bg"></div>
   </header>
 
 
@@ -57,27 +55,27 @@
           <h3 class="options__title">Набор массы</h3>
           <p class="options__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет
             вашему коту нарастить необходимые мышцы!</p>
-          <a href="catalog.html" class="options__link">Каталог pro</a>
+          <a  class="options__link" href="catalog.html">Каталог pro</a>
         </li>
       </ul>
     </section>
 
-    <section class="about">
+    <section class="about  container">
       <h2 class="about__title  section-title">Как это работает</h2>
       <ol class="about__list">
-        <li class="about__item">
+        <li class="about__item  about__item--first">
           <span class="about__number">1</span>
           <p class="about__text">Функциональное питание содержит только полезные питательные вещества.</p>
         </li>
-        <li class="about__item">
+        <li class="about__item  about__item--second">
           <span class="about__number">2</span>
           <p class="about__text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
         </li>
-        <li class="about__item">
+        <li class="about__item  about__item--third">
           <span class="about__number">3</span>
           <p class="about__text">Замените один-два приема обычной еды на наше функциональное питание.</p>
         </li>
-        <li class="about__item">
+        <li class="about__item  about__item--fourth">
           <span class="about__number">4</span><p class="about__text">Уже через месяц наслаждайтесь изменениями к лучшему
             вашего питомца!</p>
         </li>
@@ -85,25 +83,33 @@
     </section>
 
     <section class="example">
-      <h2 class="example__title">Живой пример</h2>
-      <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный
-        результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-      <dl class="example__list">
-        <dt class="example__number">5 кг</dt>
-        <dd class="example__description">снижение веса</dd>
-        <dt class="example__number">60 дней</dt>
-        <dd class="example__description">затрачено времени</dd>
-        <dt class="example__number example__number--price">15 000 руб.</dt>
-        <dd class="example__description example__description--price">Затраты на питание:</dd>
-      </dl>
-      <div class="example__slider">
-        <img src="" alt="Кот до употребления корма Cat Energy" class="example__image example__image--before">
-        <img src="" alt="Кот после употребления корма Cat Energy" class="example__image example__image--after">
-        <div class="example__toggle slider-toggle">
-          <span class="slider-toggle__point-text">Было</span>
-          <span class="slider-toggle__point-text">Стало</span>
-          <div class="slider-toggle__controller-line"></div>
-          <div class="slider-toggle__controller-pin"></div>
+      <div class="container">
+        <h2 class="example__title  section-title">Живой пример</h2>
+        <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный
+          результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+        <dl class="example__list">
+          <div class="example__item">
+            <dt class="example__number">5 кг</dt>
+          <dd class="example__description">снижение веса</dd>
+          </div>
+          <div class="example__item">
+            <dt class="example__number">60 дней</dt>
+            <dd class="example__description">затрачено времени</dd>
+          </div>
+          <div class="example__item  example__item--price">
+            <dt class="example__number  example__number--price">15 000 руб.</dt>
+          <dd class="example__description  example__description--price">Затраты на питание:</dd>
+          </div>
+        </dl>
+        <div class="example__slider">
+          <img class="example__image  example__image--before" src="img/content/example-slider/cat-before.png" width="311" height="232" alt="Кот до употребления корма Cat Energy">
+          <img class="example__image example__image--after" src="img/content/example-slider/cat-after.png" width="251" height="240" alt="Кот после употребления корма Cat Energy">
+          <div class="example__toggle slider-toggle">
+            <span class="slider-toggle__point-text">Было</span>
+            <span class="slider-toggle__point-text">Стало</span>
+            <div class="slider-toggle__controller-line"></div>
+            <div class="slider-toggle__controller-pin"></div>
+          </div>
         </div>
       </div>
     </section>
@@ -122,7 +128,7 @@
   </main>
 
 
-  <foter class="page-footer">
+  <footer class="page-footer">
     <a class="page-footer__logo logo logo--footer">
       <img src="" alt="Логотип Сat Energy" width="" height="">
     </a>
@@ -142,7 +148,7 @@
     <div class="page-footer__copyright copyright">
       <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">HTML Academy</a>
     </div>
-  </foter>
+  </footer>
 
   <script src="js/main-nav.js"></script>
 
