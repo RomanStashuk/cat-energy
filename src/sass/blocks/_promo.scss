@@ -25,19 +25,10 @@
     left: 0;
     z-index: -2;
     display: block;
-    background: url('../img/backgrounds/promo-mobile-bg.jpg') right center / auto 697px no-repeat #65a93c;
+    background: url('../img/backgrounds/promo-mobile-bg.jpg') center center / cover no-repeat #65a93c;
 
     @media (min-width: $tablet-width) {
       display: none;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 50vw;
-      height: 696px;
-      top: -120px;
-      left: 50%;
-      display: block;
-      background-image: url('../img/backgrounds/promo-desktop-bg.jpg');
     }
   }
 }
