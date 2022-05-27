@@ -6,7 +6,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 11px;
+    padding-bottom: 0;
   }
 }
 .about__title {
@@ -33,10 +33,6 @@
     justify-content: space-between;
     flex-wrap: wrap;
   }
-
-  @media (min-width: $desktop-width) {
-    justify-content: flex-start;
-  }
 }
 
 .about__item {
@@ -56,11 +52,6 @@
 
   @media (min-width: $desktop-width) {
     width: 280px;
-    padding-right: 15px;
-
-    &:not(:nth-child(4n)) {
-      margin-right: 33px;
-    }
   }
 
   &:not(:first-child) {

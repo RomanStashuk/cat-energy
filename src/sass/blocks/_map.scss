@@ -1,0 +1,75 @@
+.map {
+  background-color: $gray--lighten;
+}
+
+.map__wrap {
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.map__info {
+  padding: 28px 20px 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    padding: 60px 75px ;
+    min-height: 200px;
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    z-index: 2;
+  }
+}
+
+.map__text {
+  margin-right: 18px;
+  display: block;
+  font: 400 16px/18px 'Oswald', 'Arial', sans-serif;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 21px;
+  }
+}
+
+.map__address {
+  line-height: 20px;
+  font-style: normal;
+  color: $gray--darken;
+
+  @media (min-width: $tablet-width) {
+    & span:last-child {
+      display: block;
+      margin-top: 20px;
+    }
+  }
+}
+
+.map__image {
+  width: 100%;
+  height: 360px;
+  position: relative;
+  background-image: url('../img/map/map-mobile.png');
+  background-position: center center;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+    background-image: url('../img/map/map-tablet.png');
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url('../img/map/map-desktop.png');
+  }
+}
