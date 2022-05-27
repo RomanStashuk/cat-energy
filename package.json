@@ -2,20 +2,20 @@
   "name": "cat-energy",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "main": "index.html",
+  "author": "RomanStashuk",
+  "license": "ISC",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/RomanStashuk/cat-energy.git"
   },
-  "author": "RomanStashuk",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/RomanStashuk/cat-energy/issues"
   },
   "homepage": "https://github.com/RomanStashuk/cat-energy#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "devDependencies": {
     "autoprefixer": "^10.4.4",
     "browser-sync": "^2.27.9",
@@ -24,6 +24,7 @@
     "gulp-plumber": "^1.2.1",
     "gulp-postcss": "^9.0.1",
     "gulp-sass": "^5.1.0",
+    "gulp-scss": "^1.4.0",
     "gulp-sourcemaps": "^3.0.0",
     "sass": "^1.49.9"
   },
