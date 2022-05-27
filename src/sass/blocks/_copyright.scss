@@ -1,0 +1,37 @@
+.copyright {
+  display: flex;
+  align-items: center;
+}
+
+.copyright__icon {
+  margin-left: auto;
+  flex-shrink: 0;
+  fill: $gray--dark;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 20px;
+  }
+}
+
+.copyright__link {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: $gray--darken;
+  text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+
+    &:hover .copyright__icon,
+    &:focus .copyright__icon {
+      fill: $main-color;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+}
+
+
