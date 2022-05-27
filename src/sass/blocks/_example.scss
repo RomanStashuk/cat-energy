@@ -1,0 +1,219 @@
+.example {
+  padding: 27px 0 25px;
+  background-color: #eaeaea;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 43px;
+    padding-bottom: 64px;
+    border-top: 1px solid #e6e6e6;
+    background: linear-gradient(to bottom, #fff 620px, #eaeaea 620px);
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+    margin-top: 11px;
+    border-top: none;
+    background: linear-gradient(to bottom, #fff 194px, #eaeaea 194px);
+  }
+
+  & .container {
+    @media (min-width: $desktop-width) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+.example__wrapper {
+
+  @media (min-width: $desktop-width) {
+    width: 520px;
+    padding: 58px 20px 0 0;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.example__title {
+  margin: 0;
+}
+
+.example__text {
+  margin-top: 33px;
+  margin-bottom: 0;
+  color: $gray--darken;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 63px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 145px;
+    padding-right: 65px;
+  }
+}
+
+.example__list {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-family: 'Oswald', 'Arial', sans-serif;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-start;
+  }
+}
+
+.example__item {
+  width: 44%;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 20%;
+    min-width: 162px;
+    margin-top: 54px;
+    margin-right: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    margin-top: 69px;
+  }
+
+  &--price {
+    width: 100%;
+    margin-top: 20px;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 20px;
+
+    @media (min-width: $tablet-width) {
+      width: auto;
+      margin: 65px 0 auto auto;
+      flex-direction: column;
+      align-items: flex-end;
+      align-self: flex-start;
+      font-size: 20px;
+      line-height: 29px;
+    }
+
+    @media (min-width: $desktop-width) {
+      min-width: 330px;
+      margin: 55px auto 0 0;
+      flex-direction: row;
+      align-items: baseline;
+      justify-content: space-between;
+    }
+  }
+}
+
+.example__number {
+  width: 100%;
+  padding: 15px;
+  padding-bottom: 18px;
+  border: 1px solid $gray;
+  border-radius: 3px;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  &--price {
+    width: auto;
+    margin-left: 4px;
+    padding: 0;
+    border: none;
+    order: 2;
+    font: inherit;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 0;
+    }
+  }
+}
+
+.example__description {
+  max-width: 70%;
+  margin: 0;
+  margin-top: -8px;
+  padding: 0 15px;
+  font: 12px/1 'Arial', sans-serif;
+  color: $gray--darken;
+  text-transform: lowercase;
+  text-align: center;
+  background-color: #eaeaea;
+
+  @media (min-width: $tablet-width) {
+    max-width: initial;
+    margin-top: -9px;
+    padding: 0 10px;
+    font-size: 14px;
+    background-color: #fff;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: #eaeaea;
+  }
+
+  &--price {
+    max-width: auto;
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    color: #000;
+    text-transform: uppercase;
+  }
+}
+
+.example__slider {
+  margin-top: 44px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 690px;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.example__images {
+  width: 280px;
+  height: 240px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    height: 550px;
+  }
+}
+
+.example__image {
+  display: none;
+
+  &--current {
+    display: block;
+  }
+}
+
+.example__toggle {
+  margin-top: 15px;
+}
