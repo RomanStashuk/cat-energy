@@ -4,9 +4,11 @@
 }
 
 .copyright__icon {
+  width: 27px;
+  height: 34px;
   margin-left: auto;
   flex-shrink: 0;
-  fill: $gray--dark;
+  color: $gray--dark;
 
   @media (min-width: $tablet-width) {
     margin-left: 20px;
@@ -25,7 +27,7 @@
 
     &:hover .copyright__icon,
     &:focus .copyright__icon {
-      fill: $main-color;
+      color: $main-color;
     }
 
     &:active {
@@ -33,5 +35,3 @@
     }
   }
 }
-
-
