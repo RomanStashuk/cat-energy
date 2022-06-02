@@ -39,32 +39,55 @@
   padding: 8px 0;
   display: block;
 
-  img {
+  svg {
+    width: 128px;
+    height: 24px;
     display: block;
   }
 }
 
-.logo__img {
-  width: 34px;
-  height: 37px;
-  position: absolute;
-  top: 12px;
-  left: 20px;
+.logo__svg {
+  width: 101px;
+  height: 18px;
+  display: none;
 
   @media (min-width: $tablet-width) {
-    width: auto;
-    height: auto;
-    position: static;
+    width: 174px;
+    height: 52px;
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 59px;
   }
 }
 
-.logo__txt {
-  width: 101px;
-  height: 18px;
-  margin: 0 auto;
+.logo__use-desktop-effect {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.logo__mobile-img {
+  width: 34px;
+  height: 38px;
+  position: absolute;
+  top: 12px;
+  left: 20px;
 
   @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
+.logo__mobile-txt {
+  width: 101px;
+  height: 18px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}

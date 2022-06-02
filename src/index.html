@@ -5,6 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cat Energy</title>
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml">
   <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/style.css">
@@ -14,12 +16,17 @@
 
   <header class="page-header  page-header--index  container">
     <a class="page-header__logo  logo  logo--header">
-      <picture>
-        <source media="(min-width: 1320px)" srcset="img/logo/logo-desktop.svg">
-        <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
-        <img class="logo__img" src="img/logo/logo-img-mobile.svg" alt="Логотип Сat Energy" width="34" height="37">
-      </picture>
-      <img class="logo__txt" src="img/logo/logo-text-mobile.svg" alt="Сat Energy" width="101" height="18">
+      <svg class="logo__svg" width="101" height="18" viewBox="0 0 202 59" role="img" aria-label="Cat energy">
+        <use xlink:href="img/logo/logo.svg#logo__img"></use>
+        <use class="logo__use-desktop-effect" xlink:href="img/logo/logo.svg#logo__desktop-effect"></use>
+        <use xlink:href="img/logo/logo.svg#logo__txt--bicolored"></use>
+      </svg>
+      <svg class="logo__mobile-img" width="34" height="38">
+        <use xlink:href="img/logo/logo.svg#logo__img--mobile"></use>
+      </svg>
+      <svg class="logo__mobile-txt" width="101" height="18">
+        <use xlink:href="img/logo/logo.svg#logo__txt--monocolored"></use>
+      </svg>
     </a>
     <nav class="page-header__nav  main-nav  main-nav--closed  main-nav--nojs">
       <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
@@ -154,7 +161,9 @@
     <div class="container">
       <div class="page-footer__logo">
         <a class="logo  logo--footer">
-          <img src="img/logo/footer-logo.svg" alt="Логотип Сat Energy" width="128" height="24">
+          <svg width="128" height="24">
+            <use xlink:href="img/logo/logo.svg#logo__txt--monocolored"></use>
+          </svg>
         </a>
       </div>
       <div class="page-footer__social  social">
