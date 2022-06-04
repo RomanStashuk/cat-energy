@@ -18,7 +18,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: $gray--dark;
 
   @media (min-width: $tablet-width) {
 
@@ -32,14 +31,23 @@
       fill: none;
     }
 
-    &:hover .social__icon--fb path,
-    &:focus .social__icon--fb path {
+    &:hover .social__icon--fb,
+    &:focus .social__icon--fb {
       stroke: $main-color;
     }
 
     &:active {
       opacity: 0.6;
     }
+  }
+}
+
+.social__icon {
+  fill: $gray--dark;
+
+  &--fb {
+    fill: none;
+    stroke: $gray--dark;
   }
 }
 

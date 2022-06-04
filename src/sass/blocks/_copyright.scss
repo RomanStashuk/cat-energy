@@ -8,7 +8,7 @@
   height: 34px;
   margin-left: auto;
   flex-shrink: 0;
-  color: $gray--dark;
+  fill: $gray--dark;
 
   @media (min-width: $tablet-width) {
     margin-left: 20px;
@@ -27,7 +27,7 @@
 
     &:hover .copyright__icon,
     &:focus .copyright__icon {
-      color: $main-color;
+      fill: $main-color;
     }
 
     &:active {
