@@ -5,23 +5,35 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Каталог продукции</title>
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
 
-  <header class="page-header">
-    <a class="page-header__logo logo logo--header">
-      <img src="" alt="Логотип Сat Energy" width="" height="">
+  <header class="page-header  container">
+    <a class="page-header__logo  logo  logo--header"  aria-label="Cat energy">
+      <svg class="logo__svg" width="101" height="18" viewBox="0 0 202 59" role="img">
+        <use xlink:href="img/logo/logo.svg#logo__img"></use>
+        <use class="logo__use-desktop-effect" xlink:href="img/logo/logo.svg#logo__desktop-effect"></use>
+        <use xlink:href="img/logo/logo.svg#logo__txt--bicolored"></use>
+      </svg>
+      <svg class="logo__mobile-img" width="34" height="38">
+        <use xlink:href="img/logo/logo.svg#logo__img--mobile"></use>
+      </svg>
+      <svg class="logo__mobile-txt" width="101" height="18" role="img">
+        <use xlink:href="img/logo/logo.svg#logo__txt--monocolored"></use>
+      </svg>
     </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
+    <nav class="page-header__nav  main-nav  main-nav--closed  main-nav--nojs">
+      <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
       <ul class="main-nav__list">
         <li class="main-nav__item">
           <a href="index.html">Главная</a>
         </li>
-        <li class="main-nav__item main-nav__item--active">
+        <li class="main-nav__item  main-nav__item--active">
           <a>Каталог продукции</a>
         </li>
         <li class="main-nav__item">

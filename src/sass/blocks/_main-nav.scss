@@ -29,7 +29,7 @@
 
   @media (min-width: $tablet-width) {
     min-height: initial;
-    margin-left: 34px;
+    margin-left: 32px;
     border: none;
     position: relative;
     display: initial;
@@ -54,7 +54,7 @@
 
       &::before {
         bottom: 4px;
-        background-color: #fff;
+        background-color: $main-color;
       }
     }
   }
@@ -71,7 +71,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    color: #fff;
+    color: #111;
   }
 }
 
@@ -90,6 +90,22 @@
   }
 
 
+}
+
+.main-nav--index {
+
+  .main-nav__item {
+
+    a {
+      @media (min-width: $desktop-width) {
+        color: #fff;
+      }
+
+      &::before {
+        background-color: #fff;
+      }
+    }
+  }
 }
 
 .main-nav__toggle {

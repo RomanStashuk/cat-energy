@@ -27,6 +27,12 @@
       background: url('../img/backgrounds/promo-desktop-bg.jpg') right center / auto 696px no-repeat #65a93c;
     }
   }
+
+  &--index {
+    .page-header__nav {
+      width: 610px;
+    }
+  }
 }
 
 .page-header__nav {
@@ -37,7 +43,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 610px;
+    width: 900px;
     margin-top: 4px;
     margin-left: 16px;
   }
