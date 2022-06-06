@@ -193,6 +193,16 @@
     padding-right: 65px;
     font-size: 20px;
     line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 23px;
+    padding: 5px;
+    padding-right: 70px;
+    align-self: flex-start;
+  }
+
+  @media (pointer:fine) {
 
     &:hover,
     &:focus,
@@ -207,13 +217,6 @@
     &:active {
       opacity: 0.3;
     }
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-top: 23px;
-    padding: 5px;
-    padding-right: 70px;
-    align-self: flex-start;
   }
 
   &::after {

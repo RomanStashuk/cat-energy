@@ -19,7 +19,7 @@
   align-items: center;
   justify-content: center;
 
-  @media (min-width: $tablet-width) {
+  @media (cursor:fine) {
 
     &:hover .social__icon,
     &:focus .social__icon {
@@ -52,6 +52,7 @@
 }
 
 @media (min-width: $tablet-width) {
+
   .social__icon--vk {
     width: 30px;
     height: 22px;

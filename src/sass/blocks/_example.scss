@@ -16,7 +16,8 @@
     background: linear-gradient(to bottom, #fff 194px, #eaeaea 194px);
   }
 
-  & .container {
+  .container {
+
     @media (min-width: $desktop-width) {
       display: flex;
       justify-content: space-between;

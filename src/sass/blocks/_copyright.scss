@@ -23,7 +23,7 @@
   color: $gray--darken;
   text-decoration: none;
 
-  @media (min-width: $tablet-width) {
+  @media (pointer:fine) {
 
     &:hover .copyright__icon,
     &:focus .copyright__icon {

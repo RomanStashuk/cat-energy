@@ -83,13 +83,19 @@
   margin-top: 3px;
   align-self: stretch;
   order: 3;
+  font-size: 14px;
+  line-height: 18px;
 
   @media (min-width: $tablet-width) {
+    min-height: 54px;
     margin-top: 49px;
     margin-left: 83px;
+    padding: 15px 26px;
     align-self: flex-start;
     order: initial;
     z-index: 1;
+    font-size: 20px;
+    line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {

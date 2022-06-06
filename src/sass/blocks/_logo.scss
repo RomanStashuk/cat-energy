@@ -1,16 +1,13 @@
 .logo {
 
-  &:hover,
-  &:focus {
+  @media (pointer:fine) {
 
-    @media (min-width: $tablet-width) {
+    &:hover,
+    &:focus {
       opacity: 0.8;
     }
-  }
 
-  &:active {
-
-    @media (min-width: $tablet-width) {
+    &:active {
       opacity: 0.6;
     }
   }

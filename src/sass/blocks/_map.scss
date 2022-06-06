@@ -52,8 +52,8 @@
   font-style: normal;
   color: $gray--darken;
 
-  @media (min-width: $tablet-width) {
-    & span:last-child {
+  span:last-child {
+    @media (min-width: $tablet-width) {
       display: block;
       margin-top: 20px;
     }
