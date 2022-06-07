@@ -5,4 +5,57 @@
     font-size: 60px;
     line-height: 60px;
   }
+
+  &--sm {
+    margin: 26px auto 32px;
+    padding-left: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    line-height: 24px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 36px;
+      line-height: 36px;
+      padding-left: 0;
+
+
+    }
+
+    &::before {
+
+      @media (min-width: $tablet-width) {
+        content: '';
+        width: 30px;
+        margin-right: 36px;
+        height: 2px;
+        position: relative;
+        top: 4px;
+        left: 0;
+        background-color: $main-color;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 70px;
+        margin-right: 40px;
+      }
+    }
+
+    &::after {
+      content: '';
+      min-width: 50px;
+      margin-left: 20px;
+      flex-grow: 1;
+      height: 2px;
+      position: relative;
+      top: 4px;
+      right: 0;
+      background-color: $main-color;
+
+      @media (min-width: $tablet-width) {
+        margin-left: 36px;
+      }
+    }
+  }
 }
