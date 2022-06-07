@@ -13,13 +13,22 @@
   list-style: none;
 }
 
+.social__icon {
+  fill: $gray--dark;
+
+  &--fb {
+    fill: none;
+    stroke: $gray--dark;
+  }
+}
+
 .social__link {
   padding: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
 
-  @media (cursor:fine) {
+  @media (hover) {
 
     &:hover .social__icon,
     &:focus .social__icon {
@@ -39,15 +48,6 @@
     &:active {
       opacity: 0.6;
     }
-  }
-}
-
-.social__icon {
-  fill: $gray--dark;
-
-  &--fb {
-    fill: none;
-    stroke: $gray--dark;
   }
 }
 
