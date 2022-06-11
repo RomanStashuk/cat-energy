@@ -9,7 +9,7 @@
   <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml">
   <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/styles.min.css">
 </head>
 <body class="page__body">
 
@@ -52,9 +52,12 @@
       <span class="promo__slogan">Занялся собой? Займись котом!</span>
       <a href="form.html" class="promo__link  button">Подобрать программу</a>
       <picture>
-        <source media="(min-width: 1320px)" srcset="img/content/index-can-desktop.png">
-        <source media="(min-width: 768px)" srcset="img/content/index-can-tablet.png">
-        <img class="promo__image" src="img/content/index-can-mobile.png" alt="Корм Cat Energy с курицей" width="280" height="270">
+        <source media="(min-width: 1320px)" srcset="img/content/index-can-desktop.png,
+                                                    img/content/index-can-desktop@2x.png 2x">
+        <source media="(min-width: 768px)" srcset="img/content/index-can-tablet.png,
+                                                   img/content/index-can-tablet@2x.png 2x">
+        <img class="promo__image" srcset="img/content/index-can-mobile.png,
+                                          img/content/index-can-mobile@2x.png 2x" alt="Корм Cat Energy с курицей" width="280" height="270">
       </picture>
     </section>
 
@@ -103,7 +106,7 @@
         <div class="example__wrapper">
           <h2 class="example__title  section-title">Живой пример</h2>
           <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный
-            результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+            результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16&nbsp;часов в день.</p>
           <dl class="example__list">
             <div class="example__item">
               <dt class="example__number">5 кг</dt>
@@ -140,7 +143,7 @@
 
     <section class="map">
       <h2 class="visually-hidden">Где нас найти</h2>
-      <div class="map__wrap">
+      <div class="map__wrap  map__wrap--index">
         <div class="map__info">
           <strong class="map__text">Приглашаем<br>к сотрудничеству<br>дилеров!</strong>
           <address class="map__address">
