@@ -1,16 +1,20 @@
 #####Node.js/npm/yarn
 /node_modules
 .npm
-npm-debug.log*
+*.log
+npm-debug.*
 yarn-debug.log*
 yarn-error.log*
-
 
 #####Documents & images
 *.psd
 *.ai
 *.pdf
 
+#####Build, css
+build/
+src/css/*.css
+src/css/*.map
 
 ##### Windows
 # Windows thumbnail cache files
@@ -57,7 +61,7 @@ composer.phar
 
 #other
 .env
-
+.idea
 
 ##### MacOS
 # General
@@ -117,6 +121,7 @@ tags
 [._]*.un~
 
 ##### VisualStudioCode
+.vscode
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
@@ -139,6 +144,5 @@ composer.phar
 
 ##### SASS
 .sass-cache/
-*.css.map
 *.sass.map
 *.scss.map
