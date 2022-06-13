@@ -4,19 +4,40 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Подбор программы</title>
+  <meta name="author" content="Roman Stashuk">
+  <meta name="description" content="Подбор программы функционального питания для котов Cat Energy. Cat Energy Slim поможет вашему питомцу сбросить лишний вес, а серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!">
+  <title>Подбор программы питания Cat Energy</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#49a03a">
+  <link rel="shortcut icon" href="favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#00a300">
+  <meta name="msapplication-config" content="favicon/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 <body class="page__body">
 
-  <header class="page-header">
-    <a class="page-header__logo logo logo--header">
-      <img src="" alt="Логотип Сat Energy" width="" height="">
+  <header class="page-header  container" role="banner">
+    <a class="page-header__logo  logo  logo--header"  aria-label="Cat energy — главная">
+      <svg class="logo__svg" width="101" height="18" viewBox="0 0 202 59" role="img">
+        <use xlink:href="img/logo/logo.svg#logo__img"></use>
+        <use class="logo__use-desktop-effect" xlink:href="img/logo/logo.svg#logo__desktop-effect"></use>
+        <use xlink:href="img/logo/logo.svg#logo__txt--bicolored"></use>
+      </svg>
+      <svg class="logo__mobile-img" width="34" height="38">
+        <use xlink:href="img/logo/logo.svg#logo__img--mobile"></use>
+      </svg>
+      <svg class="logo__mobile-txt" width="101" height="18" role="img">
+        <use xlink:href="img/logo/logo.svg#logo__txt--monocolored"></use>
+      </svg>
     </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
+    <nav class="page-header__nav  main-nav  main-nav--closed  main-nav--nojs" role="navigation">
+      <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
       <ul class="main-nav__list">
         <li class="main-nav__item">
           <a href="index.html">Главная</a>
@@ -24,7 +45,7 @@
         <li class="main-nav__item">
           <a href="catalog.html">Каталог продукции</a>
         </li>
-        <li class="main-nav__item main-nav__item--active">
+        <li class="main-nav__item  main-nav__item--active">
           <a href="form.html">Подбор программы</a>
         </li>
       </ul>
@@ -32,7 +53,7 @@
   </header>
 
 
-  <main class="page-main">
+  <main class="page-main" role="main">
     <section class="choose-program">
       <h1 class="choose-program__title">Подбор программы</h1>
       <strong class="chose-program__text">Заполните анкету, и мы подберем
@@ -117,39 +138,71 @@
 
     <section class="map">
       <h2 class="visually-hidden">Где нас найти</h2>
-      <strong class="map__text">Приглашаем к сотрудничеству дилеров!</strong>
-      <address class="map__address">
-        <span>ул. Большая Конюшенная, д. 19/8</span>
-        <span>Санкт-Петербург</span>
-      </address>
-      <img src="" alt="Наше расположение на карте" class="map__image" width="" height="">
-      <div class="image__pin"></div>
+      <div class="map__wrap">
+        <div class="map__info">
+          <strong class="map__text">Приглашаем<br>к сотрудничеству<br>дилеров!</strong>
+          <address class="map__address">
+            <span>ул. Большая<br>Конюшенная,&nbsp;д.&nbsp;19/8</span><br>
+            <span>Санкт-Петербург</span>
+          </address>
+        </div>
+      </div>
+      <div class="map__image">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1196.9863866851902!2d30.32183033608693!3d59.938771780994784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1654383542298!5m2!1sru!2sua" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
     </section>
 
   </main>
 
 
-  <foter class="page-footer">
-    <a class="page-footer__logo logo logo--footer">
-      <img src="" alt="Логотип Сat Energy" width="" height="">
-    </a>
-    <div class="page-footer__social social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a href="https://vk.com/htmlacademy" class="social__link social__link--vkontakte">Мы в контакте</a>
-        </li>
-        <li class="social__item">
-          <a href="https://www.instagram.com/htmlacademy" class="social__link social__link--instagram">Мы в Инстаграме</a>
-        </li>
-        <li class="social__item">
-          <a href="https://www.facebook.com/htmlacademy" class="social__link social__link--facebook">Мы в Фейсбуке</a>
-        </li>
-      </ul>
+  <footer class="page-footer">
+    <div class="container">
+      <div class="page-footer__logo">
+        <a class="logo  logo--footer">
+          <svg width="128" height="24">
+            <use xlink:href="img/logo/logo.svg#logo__txt--monocolored"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="page-footer__social  social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link" href="https://vk.com/htmlacademy" target="_blank" aria-label="Мы в контакте">
+              <svg class="social__icon  social__icon--vk" width="23" height="16">
+                <use xlink:href="img/icons/icons.svg#vkontakte"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="social__item">
+            <a class="social__link" href="https://www.instagram.com/htmlacademy" target="_blank" aria-label="Мы в Инстаграме">
+              <svg class="social__icon  social__icon--inst" width="16" height="16">
+                <use xlink:href="img/icons/icons.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="https://www.facebook.com/htmlacademy" target="_blank" aria-label="Мы в Фейсбуке">
+              <svg class="social__icon  social__icon--fb" width="22" height="22">
+                <use xlink:href="img/icons/icons.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright  copyright">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+          HTML Academy
+          <svg class="copyright__icon" width="27" height="34">
+            <use xlink:href="img/icons/icons.svg#copyright"></use>
+          </svg>
+        </a>
+      </div>
     </div>
-    <div class="page-footer__copyright copyright">
-      <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">HTML Academy</a>
-    </div>
-  </foter>
+  </footer>
+
+
+  <script src="js/main-nav.js"></script>
 
 </body>
 </html>
