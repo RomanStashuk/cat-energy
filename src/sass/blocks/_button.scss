@@ -1,22 +1,18 @@
 .button {
   min-height: 40px;
-  padding: 11px 26px;
+  padding: 10px 26px;
+  border: none;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 14px;
-  line-height: 18px;
+  font: 400 16px/20px 'Oswald', 'Arial', sans-serif;
   text-align: center;
   color: #fff;
   text-transform: uppercase;
   text-decoration: none;
   background-color: $main-color;
 
-  @media (min-width: $tablet-width) {
-    min-height: 54px;
-    padding: 15px 26px;
-    font-size: 20px;
-    line-height: 24px;
+  @media (pointer:fine) {
 
     &:hover,
     &:focus,
@@ -26,6 +22,24 @@
 
     &:active {
       color: rgba(#fff, 0.3);
+    }
+  }
+
+  &--secondary {
+    color: $gray--darken;
+    background-color: $gray--lighten;
+
+    @media (pointer:fine) {
+
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: $gray--light;
+      }
+
+      &:active {
+        color: rgba($gray--darken, 0.3)
+      }
     }
   }
 }
