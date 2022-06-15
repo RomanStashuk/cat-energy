@@ -23,16 +23,16 @@
 <body class="page__body">
 
   <header class="page-header  container" role="banner">
-    <a class="page-header__logo  logo  logo--header"  aria-label="Cat energy — главная">
-      <svg class="logo__svg" width="101" height="18" viewBox="0 0 202 59" role="img">
+    <a class="page-header__logo  logo  logo--header" href="index.html" aria-label="Cat energy — главная">
+      <svg class="logo__svg" width="101" height="18" viewBox="0 0 202 59" aria-hidden="true" focusable="false">
         <use xlink:href="img/logo/logo.svg#logo__img"></use>
         <use class="logo__use-desktop-effect" xlink:href="img/logo/logo.svg#logo__desktop-effect"></use>
         <use xlink:href="img/logo/logo.svg#logo__txt--bicolored"></use>
       </svg>
-      <svg class="logo__mobile-img" width="34" height="38">
+      <svg class="logo__mobile-img" width="34" height="38" aria-hidden="true" focusable="false">
         <use xlink:href="img/logo/logo.svg#logo__img--mobile"></use>
       </svg>
-      <svg class="logo__mobile-txt" width="101" height="18" role="img">
+      <svg class="logo__mobile-txt" width="101" height="18" aria-hidden="true" focusable="false">
         <use xlink:href="img/logo/logo.svg#logo__txt--monocolored"></use>
       </svg>
     </a>
@@ -55,7 +55,7 @@
 
   <main class="page-main" role="main">
     <section class="choose-program">
-      <h1 class="choose-program__title">Подбор программы</h1>
+      <h1 class="section-title  choose-program__title  container">Подбор программы</h1>
       <strong class="chose-program__text">Заполните анкету, и мы подберем
         программу питания для вашего кота</strong>
       <form class="choose-program__form" action="" method="post">
@@ -81,15 +81,15 @@
           <ul>
             <li>
               <label class="input-label" for="program-slim">Похудение</label>
-              <input class="input-radio visually-hidden" id="program-slim" type="radio" name="program" value="slim" checked>
+              <input class="radio-input  visually-hidden" id="program-slim" type="radio" name="program" value="slim" checked>
             </li>
             <li>
               <label class="input-label" for="program-pro">Набор массы</label>
-              <input class="input-radio visually-hidden" id="program-pro" type="radio" name="program" value="pro">
+              <input class="radio-input  visually-hidden" id="program-pro" type="radio" name="program" value="pro">
             </li>
             <li>
               <label class="input-label" for="program-help">Не знаю (Нужен ваш совет)</label>
-              <input class="input-radio visually-hidden" id="program-help" type="radio" name="program" value="help">
+              <input class="radio-input  visually-hidden" id="program-help" type="radio" name="program" value="help">
             </li>
           </ul>
         </fieldset>
@@ -98,40 +98,40 @@
           <ul>
             <li>
               <label class="input-label" for="owner-email">E-mail:*</label>
-              <input class="string-input string-input--email" id="owner-email" type="email" name="email" placeholder="кuklachev@gmail.com"  required>
+              <input class="string-input  string-input--email" id="owner-email" type="email" name="email" placeholder="кuklachev@gmail.com"  required>
             </li>
             <li>
               <label class="input-label" for="owner-phone">Телефон:*</label>
-              <input class="string-input string-input--phone" id="owner-phone" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
+              <input class="string-input  string-input--phone" id="owner-phone" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
             </li>
           </ul>
         </fieldset>
         <fieldset class="chose-program__comment">
           <legend class="chose-program__legend">Комментарий</legend>
-          <textarea class="input-textarea" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+          <textarea class="textarea-input" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
         <fieldset class="chose-program__additiomal">
           <legend class="chose-program__legend">Дополнительно</legend>
           <ul>
             <li>
               <label class="input-label" for="additional-sweetener">Сахарозаменитель</label>
-              <input class="input-checkbox visually-hidden" id="additional-sweetener" type="checkbox" name="sweetener" checked>
+              <input class="checkbox-input  visually-hidden" id="additional-sweetener" type="checkbox" name="sweetener" checked>
             </li>
             <li>
               <label class="input-label" for="additional-milk">Молоко</label>
-              <input class="input-checkbox visually-hidden" id="additional-milk" type="checkbox" name="milk">
+              <input class="checkbox-input  visually-hidden" id="additional-milk" type="checkbox" name="milk">
             </li>
             <li>
               <label class="input-label" for="additional-water">Питьевая вода</label>
-              <input class="input-checkbox visually-hidden" id="additional-water" type="checkbox" name="water">
+              <input class="checkbox-input  visually-hidden" id="additional-water" type="checkbox" name="water">
             </li>
             <li>
               <label class="input-label" for="additionalvitamins">Витамины</label>
-              <input class="input-checkbox visually-hidden" id="additionalvitamins" type="checkbox" name="vitamins">
+              <input class="checkbox-input  visually-hidden" id="additionalvitamins" type="checkbox" name="vitamins">
             </li>
           </ul>
         </fieldset>
-        <button class="chose-program__submit button" type="submit">Отправить заявку</button>
+        <button class="chose-program__submit  button" type="submit">Отправить заявку</button>
         <small>* — Обязательные поля</small>
       </form>
     </section>
@@ -158,8 +158,8 @@
   <footer class="page-footer">
     <div class="container">
       <div class="page-footer__logo">
-        <a class="logo  logo--footer">
-          <svg width="128" height="24">
+        <a class="logo  logo--footer" href="index.html" aria-label="Cat energy — главная">
+          <svg width="128" height="24" aria-hidden="true" focusable="false">
             <use xlink:href="img/logo/logo.svg#logo__txt--monocolored"></use>
           </svg>
         </a>
@@ -167,23 +167,23 @@
       <div class="page-footer__social  social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link" href="https://vk.com/htmlacademy" target="_blank" aria-label="Мы в контакте">
-              <svg class="social__icon  social__icon--vk" width="23" height="16">
+            <a class="social__link" href="https://vk.com/htmlacademy" target="_blank" rel="nofollow noopener noreferrer" aria-label="Мы в контакте">
+              <svg class="social__icon  social__icon--vk" width="23" height="16" aria-hidden="true" focusable="false">
                 <use xlink:href="img/icons/icons.svg#vkontakte"></use>
               </svg>
             </a>
           </li>
 
           <li class="social__item">
-            <a class="social__link" href="https://www.instagram.com/htmlacademy" target="_blank" aria-label="Мы в Инстаграме">
-              <svg class="social__icon  social__icon--inst" width="16" height="16">
+            <a class="social__link" href="https://www.instagram.com/htmlacademy" target="_blank" rel="nofollow noopener noreferrer" aria-label="Мы в Инстаграме">
+              <svg class="social__icon  social__icon--inst" width="16" height="16" aria-hidden="true" focusable="false">
                 <use xlink:href="img/icons/icons.svg#instagram"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="https://www.facebook.com/htmlacademy" target="_blank" aria-label="Мы в Фейсбуке">
-              <svg class="social__icon  social__icon--fb" width="22" height="22">
+            <a class="social__link" href="https://www.facebook.com/htmlacademy" target="_blank" rel="nofollow noopener noreferrer" aria-label="Мы в Фейсбуке">
+              <svg class="social__icon  social__icon--fb" width="22" height="22" aria-hidden="true" focusable="false">
                 <use xlink:href="img/icons/icons.svg#facebook"></use>
               </svg>
             </a>
@@ -191,9 +191,9 @@
         </ul>
       </div>
       <div class="page-footer__copyright  copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="nofollow noopener noreferrer">
           HTML Academy
-          <svg class="copyright__icon" width="27" height="34">
+          <svg class="copyright__icon" width="27" height="34" aria-hidden="true" focusable="false">
             <use xlink:href="img/icons/icons.svg#copyright"></use>
           </svg>
         </a>
