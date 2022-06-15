@@ -1,0 +1,221 @@
+.additional {
+  padding-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 76px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 86px;
+  }
+}
+
+.additional__title {
+  margin: 28px 0 35px;
+
+  @media (min-width: $tablet-width) {
+    margin: 68px 0 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 76px;
+  }
+}
+
+.additional__wrap {
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.additional__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: $desktop-width) {
+    min-width: 896px;
+    min-height: 290px;
+  }
+}
+
+.additional__item {
+  padding: 13px 0 20px;
+  border-bottom: 1px solid $gray;
+
+  @media (min-width: $tablet-width) {
+    padding: 26px 38px 28px;
+    border: 1px solid $gray;
+    border-top: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &:first-child {
+    border-top: 1px solid $gray;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 15px 0;
+    border-left: none;
+    border-right: none;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+
+.additional__link-title {
+  margin: 0 0 10px;
+  display: block;
+  font: 400 16px/1 'Oswald', 'Arial', sans-serif;
+  color: $gray--darkest;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 15px;
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+
+  @media (pointer:fine) {
+
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+
+  h3 {
+    margin: 0;
+    font: inherit;
+  }
+}
+
+.additional__info {
+  margin: 0 0 20px;
+  display: flex;
+  justify-content: space-between;
+  color: $gray--darken;
+
+  @media (min-width: $desktop-width) {
+    min-width: 288px;
+    margin-left: auto;
+    margin-bottom: 0;
+  }
+}
+
+.additional__price {
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    min-width: 45px;
+    margin-left: 50px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: auto;
+  }
+}
+
+.additional__gift {
+  min-height: 289px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $main-color;
+  background-image: url('../img/backgrounds/gift-mobile.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @include retina {
+    background-image: url('../img/backgrounds/gift-mobile@2x.jpg');
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 200px;
+    margin-top: 70px;
+    flex-direction: row;
+    justify-content: space-between;
+    background-image: url('../img/backgrounds/gift-tablet.jpg');
+
+    @include retina {
+      background-image: url('../img/backgrounds/gift-tablet@2x.jpg');
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    min-height: 290px;
+    margin-top: 0;
+    padding: 40px;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url('../img/backgrounds/gift-desktop.jpg');
+
+    @include retina {
+      background-image: url('../img/backgrounds/gift-desktop@2x.jpg');
+    }
+  }
+}
+
+.additional__text {
+  margin: 50px 60px auto;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    max-width: 180px;
+    margin: 0;
+    margin-right: 124px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 46px;
+    margin-right: 0;
+    text-align: center;
+  }
+
+  em {
+    font-style: normal;
+  }
+}
+
+.additional__image {
+  margin-top: 60px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    margin-left: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+  }
+}
+
+.additional__link-buy {
+  width: 100%;
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    margin-left: 40px;
+  }
+}
