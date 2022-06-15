@@ -25,6 +25,10 @@
       left: 50%;
       z-index: -1;
       background: url('../img/backgrounds/promo-desktop-bg.jpg') right center / auto 696px no-repeat #65a93c;
+
+      @include retina {
+        background-image: url('../img/backgrounds/promo-desktop-bg@2x.jpg');
+      }
     }
   }
 

@@ -28,6 +28,10 @@
     display: block;
     background: url('../img/backgrounds/promo-mobile-bg.jpg') center center / cover no-repeat #65a93c;
 
+    @include retina {
+      background-image: url('../img/backgrounds/promo-mobile-bg@2x.jpg');
+    }
+
     @media (min-width: $tablet-width) {
       display: none;
     }
@@ -119,9 +123,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 522px;
+    width: 552px;
     height: 499px;
     margin-top: -365px;
-    margin-left: 455px;
+    margin-left: 450px;
   }
 }
