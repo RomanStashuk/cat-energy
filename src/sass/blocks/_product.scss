@@ -1,0 +1,231 @@
+.product {
+  border-top: 1px solid $gray--light;
+
+  @media (min-width: $tablet-width) {
+    min-width: 315px;
+    max-width: 324px;
+    border: none;
+    flex-grow: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 245px;
+    flex-grow: 0;
+  }
+
+  &--more {
+    border-bottom: 1px solid $gray--light;
+
+    @media (min-width: $tablet-width) {
+      min-height: 510px;
+      border: none;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+.product__wrap {
+  min-height: 195px;
+  padding: 8px 20px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    min-height: 510px;
+    padding: 8px 36px 40px;
+    align-items: center;
+    justify-content: flex-end;
+    background: linear-gradient(to bottom, #fff 80px, $gray--lighten 80px);
+  }
+
+  &--more {
+    min-height: initial;
+    padding-top: 80px;
+
+    @media (min-width: $tablet-width) {
+      min-height: 430px;
+      margin-top: auto;
+      padding-top: 160px;
+      border: 1px solid $gray--lighten;
+      background: initial;
+    }
+  }
+}
+
+.product__link {
+  width: 50%;
+  align-self: flex-end;
+  text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    width: initial;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+  }
+
+  &--more {
+    width: auto;
+    align-self: center;
+    position: relative;
+
+    &::before,
+    &::after {
+      content: '';
+      width: 30px;
+      height: 2px;
+      position: absolute;
+      top: -39px;
+      left: calc(50% - 15px);
+      background-color: #d3d3d3;
+
+      @media (min-width: $tablet-width) {
+        width: 60px;
+        top: -80px;
+        left: calc(50% - 30px);
+      }
+    }
+
+    &::after {
+      transform: rotate(90deg);
+    }
+  }
+}
+
+.product__title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-right: 60px;
+  font: 400 16px/20px 'Oswald', 'Arial', sans-serif;
+  color: $gray--darkest;
+  text-transform: uppercase;
+
+  @media (max-width: $mobile-width-only) {
+
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 34px;
+    margin-bottom: 14px;
+    padding-right: 0;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  @media(pointer:fine) {
+
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+
+  &--more {
+    padding: 0;
+    margin: 0;
+    color: #111;
+  }
+}
+
+.product__img-wrap {
+  width: calc(50% - 20px);
+  height: 100px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 168px;
+    height: 200px;
+    position: static;
+    order: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 172px;
+    height: 196px;
+  }
+}
+
+.product__image {
+  max-height: 100px;
+  display: block;
+  object-fit: contain;
+
+  @media (min-width: $tablet-width) {
+    max-height: 200px;
+  }
+}
+
+.product__properties-list {
+  width: 50%;
+  margin: 0;
+  margin-bottom: 22px;
+  align-self: flex-end;
+  font-size: 12px;
+  line-height: 16px;
+  color: $gray--darken;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    margin-bottom: 32px;
+    align-self: center;
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+.product__properties-item {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    padding: 8px 0;
+    border-bottom: 1px solid $gray;
+  }
+}
+
+.product__value {
+  margin: 0;
+}
+
+.product__btn {
+  width: 100%;
+}
+
+.product__text {
+  margin: 8px auto 21px;
+  font-size: 12px;
+  line-height: 16px;
+  color: $gray--darken;
+  text-align: center;
+
+  @media (max-width: $mobile-width-only) {
+
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 23px auto 86px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
