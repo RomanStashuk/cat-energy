@@ -1,10 +1,6 @@
 .catalog {
   max-width: $desktop-width;
   margin: 0 auto;
-
-  @media (max-width: $mobile-width-only) {
-    border-top: 1px solid #d9d9d9;
-  }
 }
 
 .catalog__title {

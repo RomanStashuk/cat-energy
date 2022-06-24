@@ -91,17 +91,28 @@
 
 }
 
-.main-nav--index {
+.main-nav {
 
-  .main-nav__item {
+  @media (max-width: $mobile-width-only) {
+    border-bottom: 1px solid #d9d9d9;
+  }
 
-    a {
+  &--index {
 
-      @media (min-width: $desktop-width) {
-        color: #fff;
+    @media (max-width: $mobile-width-only) {
+      border-bottom: none;
+    }
 
-        &::before {
-          background-color: #fff;
+    .main-nav__item {
+
+      a {
+
+        @media (min-width: $desktop-width) {
+          color: #fff;
+
+          &::before {
+            background-color: #fff;
+          }
         }
       }
     }
