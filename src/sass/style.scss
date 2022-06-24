@@ -16,7 +16,8 @@
 @import 'blocks/container';
 @import 'blocks/button.scss';
 @import 'blocks/section-title';
-@import 'blocks/slider-toggle';
+@import 'blocks/secondary-title';
+@import 'blocks/slider';
 
 
 // Header
@@ -52,3 +53,6 @@
 @import 'blocks/catalog';
 @import 'blocks/product';
 @import 'blocks/additional';
+
+@import 'blocks/choose-program';
+@import 'blocks/form';
