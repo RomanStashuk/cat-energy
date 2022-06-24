@@ -1,18 +1,42 @@
-.slider-toggle {
-  width: 230px;
-  height: 40px;
+.slider__image-wrap {
+  width: 280px;
+  height: 240px;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    height: 550px;
+  }
+}
+
+.slider__image {
+  display: none;
+  width: 100%;
+  height: auto;
+
+  &--current {
+    display: block;
+  }
+}
+
+.slider__controls {
+  min-width: 230px;
+  height: 40px;
+  margin: 15px auto 0;
   display: flex;
   align-items: center;
   justify-content: center;
 
   @media (min-width: $tablet-width) {
-    width: 600px;
+    min-width: 600px;
     min-height: 40px;
   }
 }
 
-.slider-toggle__btn {
+.slider__btn {
   padding: 10px;
   border: none;
   font: 400 16px/1 'Oswald', 'Arial', sans-serif;
@@ -20,14 +44,23 @@
   background-color: transparent;
 
   @media (min-width: $tablet-width) {
-    height: 100%;
     padding: 7px 0;
     border-bottom: 1px dotted #b2b2b2;
     font-size: 20px;
+
+    &:hover,
+    &:focus {
+      border-bottom: 1px solid #919191;
+      cursor: pointer;
+    }
+
+    &:active {
+      border-bottom: none;
+    }
   }
 }
 
-.slider-toggle__controller-line {
+.slider__range {
   width: 84px;
   height: 14px;
   margin: 0 8px;
@@ -40,39 +73,46 @@
     width: 430px;
     height: 6px;
     margin: 0 25px;
-    margin-top: 2px;
     border: none;
     background-color: #dcdcdc;
   }
 }
 
-.slider-toggle__controller-pin {
+.slider__toggle {
   width: 35px;
   height: 6px;
   border-radius: 6px;
   position: absolute;
   top: 3px;
-  left: 5px;
   z-index: 2;
   background-color: $main-color;
 
   @media (min-width: $tablet-width) {
-    width: 32px;
-    height: 32px;
+    width: 34px;
+    height: 34px;
+    border: 1px solid $gray;
     border-radius: 50%;
-    top: -13.5px;
-    left: calc(50% - 16px);
+    top: -13px;
+    display: flex;
     background-color: #fff;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16);
+
+    &:hover,
+    &:focus {
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.19);
+    }
+
+    &:active {
+      border-color: $main-color;
+      box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+    }
 
     &::before {
       content: '';
       width: 8px;
       height: 8px;
+      margin: auto;
       border-radius: 50%;
-      position: absolute;
-      top: calc(50% - 4px);
-      left: calc(50% - 4px);
       display: block;
       background-color: $main-color;
     }

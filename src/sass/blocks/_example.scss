@@ -186,35 +186,5 @@
   @media (min-width: $desktop-width) {
     width: 690px;
     margin-top: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
-}
-
-.example__images {
-  width: 280px;
-  height: 240px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  @media (min-width: $tablet-width) {
-    width: auto;
-    height: 550px;
-  }
-}
-
-.example__image {
-  display: none;
-
-  &--current {
-    display: block;
-  }
-}
-
-.example__toggle {
-  margin-top: 15px;
 }
