@@ -26,15 +26,15 @@
   <header class="page-header  page-header--index  container" role="banner">
     <a class="page-header__logo  logo  logo--header"  aria-label="Cat energy — главная">
       <svg class="logo__svg" width="101" height="18" viewBox="0 0 202 59" aria-hidden="true" focusable="false">
-        <use xlink:href="img/logo/logo.svg#logo__img"></use>
-        <use class="logo__use-desktop-effect" xlink:href="img/logo/logo.svg#logo__desktop-effect"></use>
-        <use xlink:href="img/logo/logo.svg#logo__txt--bicolored"></use>
+        <use xlink:href="img/logo/logo.svg#logo__img"/>
+        <use class="logo__use-desktop-effect" xlink:href="img/logo/logo.svg#logo__desktop-effect"/>
+        <use xlink:href="img/logo/logo.svg#logo__txt--bicolored"/>
       </svg>
       <svg class="logo__mobile-img" width="34" height="38" aria-hidden="true" focusable="false">
-        <use xlink:href="img/logo/logo.svg#logo__img--mobile"></use>
+        <use xlink:href="img/logo/logo.svg#logo__img--mobile"/>
       </svg>
       <svg class="logo__mobile-txt" width="101" height="18" aria-hidden="true" focusable="false">
-        <use xlink:href="img/logo/logo.svg#logo__txt--monocolored"></use>
+        <use xlink:href="img/logo/logo.svg#logo__txt--monocolored"/>
       </svg>
     </a>
     <nav class="page-header__nav  main-nav  main-nav--index  main-nav--closed  main-nav--nojs" role="navigation">
@@ -61,6 +61,12 @@
       <span class="promo__slogan">Занялся собой? Займись котом!</span>
       <a href="form.html" class="promo__link  button">Подобрать программу</a>
       <picture>
+        <source type="image/webp" media="(min-width: 1320px)" srcset="img/content/index-can-desktop.webp,
+                                                                      img/content/index-can-desktop@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 768px)" srcset="img/content/index-can-tablet.webp,
+                                                                     img/content/index-can-tablet@2x.webp 2x">
+        <source type="image/webp" srcset="img/content/index-can-mobile.webp,
+                                          img/content/index-can-mobile@2x.webp 2x">
         <source media="(min-width: 1320px)" srcset="img/content/index-can-desktop.png,
                                                     img/content/index-can-desktop@2x.png 2x">
         <source media="(min-width: 768px)" srcset="img/content/index-can-tablet.png,
@@ -131,20 +137,32 @@
             </div>
           </dl>
         </div>
-        <div class="example__slider">
-          <div class="example__images">
+        <div class="example__slider  slider">
+          <div class="slider__image-wrap">
             <picture>
               <source media="(min-width: 768px)" width="491" height="544" srcset="img\content\example-slider\slider-image.png">
-              <img class="example__image  example__image--before  example__image--current" src="img/content/example-slider/cat-before.png" width="311" height="232" alt="Кот до употребления корма Cat Energy">
+              <img class="slider__image  slider__image--before  slider__image--current" src="img/content/example-slider/cat-before.png" width="311" height="232" alt="Кот до употребления корма Cat Energy">
             </picture>
-            <img class="example__image  example__image--after" src="img/content/example-slider/cat-after.png" width="251" height="240" alt="Кот после употребления корма Cat Energy">
+            <picture>
+              <img class="slider__image  slider__image--after" src="img/content/example-slider/cat-after.png" width="251" height="240" alt="Кот после употребления корма Cat Energy">
+            </picture>
           </div>
-          <div class="example__toggle slider-toggle">
-            <button class="slider-toggle__btn  slider-toggle__btn--before">Было</button>
-            <div class="slider-toggle__controller-line">
-              <div class="slider-toggle__controller-pin"></div>
+          <div class="slider__controls">
+            <button class="slider__btn  slider__btn--before">Было</button>
+            <div class="slider__range">
+              <div class="slider__toggle" tabindex="0"></div>
+              <style>
+                .slider__toggle {
+                  left: 5px;
+                }
+                @media (min-width: 768px) {
+                  .slider__toggle {
+                    left: calc(50% - 16px);
+                  }
+                }
+              </style>
             </div>
-            <button class="slider-toggle__btn  slider-toggle__btn--after">Стало</button>
+            <button class="slider__btn  slider__btn--after">Стало</button>
           </div>
         </div>
       </div>
@@ -174,7 +192,7 @@
       <div class="page-footer__logo">
         <a class="logo  logo--footer" aria-label="Cat energy — главная">
           <svg width="128" height="24" aria-hidden="true" focusable="false">
-            <use xlink:href="img/logo/logo.svg#logo__txt--monocolored"></use>
+            <use xlink:href="img/logo/logo.svg#logo__txt--monocolored"/>
           </svg>
         </a>
       </div>
@@ -183,7 +201,7 @@
           <li class="social__item">
             <a class="social__link" href="https://vk.com/htmlacademy" target="_blank" rel="nofollow noopener noreferrer" aria-label="Мы в контакте">
               <svg class="social__icon  social__icon--vk" width="23" height="16" aria-hidden="true" focusable="false">
-                <use xlink:href="img/icons/icons.svg#vkontakte"></use>
+                <use xlink:href="img/icons/icons.svg#vkontakte"/>
               </svg>
             </a>
           </li>
@@ -191,14 +209,14 @@
           <li class="social__item">
             <a class="social__link" href="https://www.instagram.com/htmlacademy" target="_blank" rel="nofollow noopener noreferrer" aria-label="Мы в Инстаграме">
               <svg class="social__icon  social__icon--inst" width="16" height="16" aria-hidden="true" focusable="false">
-                <use xlink:href="img/icons/icons.svg#instagram"></use>
+                <use xlink:href="img/icons/icons.svg#instagram"/>
               </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link" href="https://www.facebook.com/htmlacademy" target="_blank" rel="nofollow noopener noreferrer" aria-label="Мы в Фейсбуке">
               <svg class="social__icon  social__icon--fb" width="22" height="22" aria-hidden="true" focusable="false">
-                <use xlink:href="img/icons/icons.svg#facebook"></use>
+                <use xlink:href="img/icons/icons.svg#facebook"/>
               </svg>
             </a>
           </li>
@@ -208,7 +226,7 @@
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="nofollow noopener noreferrer">
           HTML Academy
           <svg class="copyright__icon" width="27" height="34" aria-hidden="true" focusable="false">
-            <use xlink:href="img/icons/icons.svg#copyright"></use>
+            <use xlink:href="img/icons/icons.svg#copyright"/>
           </svg>
         </a>
       </div>
