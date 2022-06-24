@@ -1,0 +1,28 @@
+.choose-program__title {
+  margin-top: 26px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 72px;
+  }
+}
+
+.choose-program__text {
+  margin: 37px auto 38px;
+  display: block;
+  font: 400 14px/18px 'Oswald', 'Arial', sans-serif;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin: 54px auto 66px 40px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 56px auto 66px;
+  }
+}
