@@ -1,58 +1,15 @@
-@charset 'utf-8';
-
-
 // Base styles
 
-@import 'base/fonts';
 @import 'base/normalize';
-@import 'base/variables';
-@import 'base/mixins';
-@import 'base/global';
 
+@import 'base/variables';
+
+@import 'base/fonts';
+
+@import 'base/mixins';
+
+@import 'base/global';
 
 // Blocks
 
-@import 'blocks/page';
-@import 'blocks/container';
-@import 'blocks/button.scss';
-@import 'blocks/section-title';
-@import 'blocks/secondary-title';
-@import 'blocks/slider';
-
-
-// Header
-
-@import 'blocks/page-header';
-@import 'blocks/main-nav';
-@import 'blocks/logo';
-
-
-// Main
-
-@import 'blocks/page-main';
-
-
-// Sections
-
-@import 'blocks/promo';
-@import 'blocks/options';
-@import 'blocks/about';
-@import 'blocks/example';
-@import 'blocks/map';
-
-
-// Footer
-
-@import 'blocks/page-footer';
-@import 'blocks/social';
-@import 'blocks/copyright';
-
-
-// Inner pages
-
-@import 'blocks/catalog';
-@import 'blocks/product';
-@import 'blocks/additional';
-
-@import 'blocks/choose-program';
-@import 'blocks/form';
+@import 'blocks/**/*';
