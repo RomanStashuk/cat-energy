@@ -12,7 +12,7 @@
   text-decoration: none;
   background-color: $main-color;
 
-  @media (pointer:fine) {
+  @media (pointer: fine) {
 
     &:hover,
     &:focus,
@@ -29,7 +29,7 @@
     color: $gray--darken;
     background-color: $gray--lighten;
 
-    @media (pointer:fine) {
+    @media (pointer: fine) {
 
       &:hover,
       &:focus,
@@ -38,7 +38,7 @@
       }
 
       &:active {
-        color: rgba($gray--darken, 0.3)
+        color: rgba($gray--darken, 0.3);
       }
     }
   }

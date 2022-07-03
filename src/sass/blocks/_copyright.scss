@@ -23,7 +23,7 @@
   color: $gray--darken;
   text-decoration: none;
 
-  @media (pointer:fine) {
+  @media (pointer: fine) {
 
     &:hover .copyright__icon,
     &:focus .copyright__icon {

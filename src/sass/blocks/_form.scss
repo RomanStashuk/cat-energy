@@ -289,7 +289,6 @@
       border-color: $error-color;
     }
 
-
     &::placeholder {
       color: $gray--darken;
       text-transform: uppercase;
@@ -343,7 +342,7 @@
   &--checkbox {
 
     &:not(:disabled):hover + .form__label,
-    &:not(:disabled):focus + .form__label{
+    &:not(:disabled):focus + .form__label {
 
       &::before {
         border-color: #bababa;
@@ -352,7 +351,7 @@
 
     @media (pointer: fine) {
 
-      &:not(:disabled):active + .form__label{
+      &:not(:disabled):active + .form__label {
         opacity: 0.3;
       }
     }

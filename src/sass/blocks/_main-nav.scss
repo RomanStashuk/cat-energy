@@ -76,7 +76,7 @@
 
 .main-nav__item a[href] {
 
-  @media (pointer:fine) {
+  @media (pointer: fine) {
 
     &:hover,
     &:focus {
@@ -87,8 +87,6 @@
       opacity: 0.3;
     }
   }
-
-
 }
 
 .main-nav {
@@ -146,8 +144,9 @@
     background-color: #000;
     top: 25px;
     right: 20px;
-    box-shadow: 0 7px 0 0 #000,
-                0 14px 0 0 #000;
+    box-shadow:
+      0 7px 0 0 #000,
+      0 14px 0 0 #000;
   }
 }
 
