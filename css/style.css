@@ -1892,6 +1892,7 @@ img {
   }
 
   .product {
+    min-height: 510px;
     min-width: 315px;
     max-width: 324px;
     border: none;
@@ -1899,7 +1900,6 @@ img {
   }
 
   .product--more {
-    min-height: 510px;
     border: none;
     display: flex;
     flex-direction: column;
@@ -1914,9 +1914,9 @@ img {
   }
 
   .product__wrap--more {
-    min-height: 430px;
+    min-height: 432px;
     margin-top: auto;
-    padding-top: 160px;
+    padding-top: initial;
     border: 1px solid #f2f2f2;
     background: initial;
   }
@@ -1932,7 +1932,7 @@ img {
   .product__link--more::before,
   .product__link--more::after {
     width: 60px;
-    top: -80px;
+    top: -30px;
     left: calc(50% - 30px);
   }
 
@@ -2227,7 +2227,6 @@ img {
   .catalog__list {
     padding: 0 50px;
     justify-content: space-between;
-    gap: initial;
   }
 
   .choose-program__title {
