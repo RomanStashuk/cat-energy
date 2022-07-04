@@ -26,5 +26,6 @@ module.exports = () => {
     .pipe($.gp.size({ title: 'CSS before' }))
     .pipe($.gp.csso())
     .pipe($.gp.size({ title: 'CSS after' }))
-    .pipe($.gulp.dest($.path.sass.dest, { sourcemaps: $.app.isDev }));
+    .pipe($.gulp.dest($.path.sass.dest, { sourcemaps: $.app.isDev }))
+    .pipe($.browserSync.stream());
 };

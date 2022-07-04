@@ -32,5 +32,6 @@ module.exports = () => {
           ]
         })
       ])))
-    .pipe($.gulp.dest($.path.img.dest));
+    .pipe($.gulp.dest($.path.img.dest))
+    .pipe($.browserSync.stream());
 };

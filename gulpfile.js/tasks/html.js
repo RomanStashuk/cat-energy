@@ -14,5 +14,6 @@ module.exports = () => {
     .pipe($.gp.htmlmin($.app.htmlmin))
     .pipe($.gp.size({ title: 'HTML after' }))
     .pipe($.gp.htmlBemValidator())
-    .pipe($.gulp.dest($.path.html.dest));
+    .pipe($.gulp.dest($.path.html.dest))
+    .pipe($.browserSync.stream());
 };
