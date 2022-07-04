@@ -38,12 +38,12 @@
 .map__text {
   margin-right: 18px;
   display: block;
-  font: 400 16px/18px 'Oswald', 'Arial', sans-serif;
+  font: 400 16px/20px 'Oswald', 'Arial', sans-serif;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    line-height: 21px;
+    line-height: 24px;
   }
 }
 
@@ -51,6 +51,14 @@
   line-height: 20px;
   font-style: normal;
   color: $gray--darken;
+
+  @media (min-width: $tablet-width) {
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
 
   span:last-child {
 
