@@ -9,7 +9,8 @@ module.exports = {
 
   htmlmin: {
     collapseWhitespace: isProd,
-    removeComments: isProd
+    removeComments: isProd,
+    ignoreCustomFragments: [/<br>\s/gi]
   },
 
   webpack: {
