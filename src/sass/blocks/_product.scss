@@ -2,6 +2,7 @@
   border-top: 1px solid $gray--light;
 
   @media (min-width: $tablet-width) {
+    min-height: 510px;
     min-width: 315px;
     max-width: 324px;
     border: none;
@@ -17,7 +18,6 @@
     border-bottom: 1px solid $gray--light;
 
     @media (min-width: $tablet-width) {
-      min-height: 510px;
       border: none;
       display: flex;
       flex-direction: column;
@@ -46,9 +46,9 @@
     padding-top: 80px;
 
     @media (min-width: $tablet-width) {
-      min-height: 430px;
+      min-height: 432px;
       margin-top: auto;
-      padding-top: 160px;
+      padding-top: initial;
       border: 1px solid $gray--lighten;
       background: initial;
     }
@@ -85,7 +85,7 @@
 
       @media (min-width: $tablet-width) {
         width: 60px;
-        top: -80px;
+        top: -30px;
         left: calc(50% - 30px);
       }
     }
