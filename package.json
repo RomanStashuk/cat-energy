@@ -2,7 +2,7 @@
   "name": "cat-energy",
   "version": "1.0.0",
   "description": "Проект «Cat energy» від HTML Academy",
-  "main": "gulpfile.js",
+  "main": "index.html",
   "author": "RomanStashuk <romanstashuk1@gmail.com> (https://github.com/RomanStashuk)",
   "license": "ISC",
   "repository": {
