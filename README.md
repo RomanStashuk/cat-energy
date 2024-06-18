@@ -1,4 +1,4 @@
-# Проект «Cat energy» від [HTML Academy](https://htmlacademy.ru/)
+# Проект «Cat energy»
 Адаптивна верстка макета інтернет-магазину фітнес харчування для котів<br>:scream_cat::smile_cat::fish::fork_and_knife::poultry_leg::joy_cat::cat2:<br><br>
 [Демо проекту](https://romanstashuk.github.io/cat-energy/):link:
 ____
