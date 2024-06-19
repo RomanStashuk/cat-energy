@@ -29,7 +29,6 @@
   justify-content: center;
 
   @media (hover) {
-
     &:hover .social__icon,
     &:focus .social__icon {
       fill: $main-color;
@@ -48,10 +47,9 @@
 }
 
 @media (min-width: $tablet-width) {
-
-  .social__icon--vk {
-    width: 30px;
-    height: 22px;
+  .social__icon--x {
+    width: 36px;
+    height: 28px;
   }
 
   .social__icon--inst {
