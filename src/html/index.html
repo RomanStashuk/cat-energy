@@ -52,6 +52,14 @@
       type="font/woff2"
       crossorigin
     />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/index.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/styles.css"
+    />
   </head>
   <body class="page-body">
     <header class="page-header page-header--index container" role="banner">
@@ -259,45 +267,89 @@
               </div>
             </dl>
           </div>
+
           <div class="example__slider slider">
-            <div class="slider__image-wrap">
-              <picture>
-                <source
-                  media="(min-width: 768px)"
-                  width="491"
-                  height="544"
-                  srcset="img\content\example-slider\slider-image.png"
-                />
-                <img
-                  class="slider__image slider__image--before slider__image--current"
-                  src="img/content/example-slider/cat-before.png"
-                  width="311"
-                  height="232"
-                  alt="Кіт до вживання корму Cat Energy"
-                />
-              </picture>
-              <picture>
-                <img
-                  class="slider__image slider__image--after"
-                  src="img/content/example-slider/cat-after.png"
-                  width="251"
-                  height="240"
-                  alt="Кіт після вживання корму Cat Energy"
-                />
-              </picture>
+            <div class="slider__image-container">
+              <!-- https://www.npmjs.com/package/img-comparison-slider -->
+              <img-comparison-slider class="img-comparison-slider">
+                <figure slot="first" class="before">
+                  <img
+                    class="slider__image"
+                    width="100%"
+                    src="img/content/example-slider/cat-before.jpg"
+                  />
+                  <figcaption>Було</figcaption>
+                </figure>
+                <figure slot="second" class="after">
+                  <img
+                    class="slider__image"
+                    width="100%"
+                    src="img/content/example-slider/cat-after.jpg"
+                  />
+                  <figcaption>Стало</figcaption>
+                </figure>
+                <svg
+                  slot="handle"
+                  class="custom-animated-handle"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="100"
+                  viewBox="-8 -3 16 6"
+                >
+                  <path
+                    stroke="#fff"
+                    d="M -5 -2 L -7 0 L -5 2 M -5 -2 L -5 2 M 5 -2 L 7 0 L 5 2 M 5 -2 L 5 2"
+                    stroke-width="1"
+                    fill="#68b738"
+                    vector-effect="non-scaling-stroke"
+                  ></path>
+                </svg>
+              </img-comparison-slider>
+              <!--  -->
+            </div>
+
+            <div
+              class="slider__image-container slider__image-container--mobile"
+            >
+              <div class="slider__image-wrap slider__image-wrap--before">
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="img/content/example-slider/cat-before-mobile.webp"
+                  />
+                  <img
+                    class="slider__image slider__image--mobile"
+                    src="img/content/example-slider/cat-before-mobile.png"
+                    width="510"
+                    height="620"
+                    alt="Кіт до вживання корму Cat Energy"
+                  />
+                </picture>
+              </div>
+              <div
+                class="slider__image-wrap slider__image-wrap--after visually-hidden"
+              >
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="img/content/example-slider/cat-after-mobile.webp"
+                  />
+                  <img
+                    class="slider__image slider__image--mobile"
+                    src="img/content/example-slider/cat-after-mobile.png"
+                    width="510"
+                    height="630"
+                    alt="Кіт після вживання корму Cat Energy"
+                  />
+                </picture>
+              </div>
             </div>
             <div class="slider__controls">
               <button class="slider__btn slider__btn--before">Було</button>
-              <div class="slider__range">
-                <div class="slider__toggle" tabindex="0"></div>
+              <div class="slider__toggler-wrap" tabindex="0">
+                <div class="slider__toggler"></div>
                 <style>
-                  .slider__toggle {
+                  .slider__toggler {
                     left: 5px;
-                  }
-                  @media (min-width: 768px) {
-                    .slider__toggle {
-                      left: calc(50% - 16px);
-                    }
                   }
                 </style>
               </div>
