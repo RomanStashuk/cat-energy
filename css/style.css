@@ -1418,6 +1418,8 @@ img {
   --divider-width: 2px;
   --divider-color: #68b738;
   --default-handle-opacity: 0;
+  border: 2px solid transparent;
+  border-radius: 3px;
 }
 
 .img-comparison-slider:hover .custom-animated-handle {
@@ -1425,8 +1427,7 @@ img {
 }
 
 .img-comparison-slider:focus {
-  border: 2px solid #68b738;
-  border-radius: 3px;
+  border-color: #68b738;
   outline: none;
 }
 
